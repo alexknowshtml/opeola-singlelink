@@ -71,7 +71,7 @@ const Home = ({ links }: { links: LinkType[]}) => {
         if(link?.type === 'html')
           return (<div key={link.id}>{parse(link.content)}</div>)
       })}
-      {process.env.BRANDING && <div className='text-gray-600 mt-auto mt-10 text-center'><a href="https://10k.city" className='font-medium text-indigo-600 hover:underline hover:text-indigo-700'>Powered by 10k Independents</a></div>}
+      {process.env.BRANDING && <div className='text-gray-600 mt-auto mt-10 text-center'>Powered by <a href="https://10k.city">10k Independents</a></div>}
     </div>
     </>
   )
